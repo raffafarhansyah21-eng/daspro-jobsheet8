@@ -11,10 +11,10 @@ public class Tugas218 {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 int hasil = i * j;
-                System.out.printf("%4d", hasil); 
+                System.out.printf("%", hasil); 
                 jumlahSeluruhAngka += hasil;
             }
-            System.out.println(); // Pindah baris setelah satu baris matriks selesai
+            System.out.println();
         }
         System.out.println("Jumlah seluruh angka: " + jumlahSeluruhAngka);
         sc.close();
