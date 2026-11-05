@@ -12,7 +12,7 @@ public class Tugas318 {
         int tokoTerbaik = 0;
 
         for (int i = 1; i <= jumlahToko; i++) {
-            System.out.println("--- Toko " + i + " ---");
+            System.out.println("Toko " + i + ":");
             System.out.print("Masukkan jumlah pelanggan: ");
             int jumlahPelanggan = sc.nextInt();
 
@@ -21,14 +21,13 @@ public class Tugas318 {
             for (int j = 1; j <= jumlahPelanggan; j++) {
                 System.out.print("  Jumlah barang yang dibeli pelanggan " + j + ": ");
                 int barangPelanggan = sc.nextInt();
-                totalBarangToko += barangPelanggan; // Akumulasi barang per toko
+                totalBarangToko += barangPelanggan;
             }
 
-            totalBarangSeluruhToko += totalBarangToko; // Akumulasi seluruh toko
+            totalBarangSeluruhToko += totalBarangToko;
 
             System.out.println("Toko " + i + " -> pelanggan: " + jumlahPelanggan + ", total barang: " + totalBarangToko);
 
-            // Mencari toko dengan barang terbanyak (jika sama, pilih nomor lebih kecil menggunakan operator >)
             if (totalBarangToko > maxBarang) {
                 maxBarang = totalBarangToko;
                 tokoTerbaik = i;
@@ -37,7 +36,7 @@ public class Tugas318 {
 
         System.out.println("========================================");
         System.out.println("Total barang seluruh toko: " + totalBarangSeluruhToko);
-        System.out.println("Toko dengan barang terbanyak: " + tokoTerbaik);
+        System.out.println("Toko dengan barang terbanyak: " + "Toko " + tokoTerbaik);
         sc.close();
     }
 }
